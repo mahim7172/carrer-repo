@@ -2,20 +2,23 @@
 
 const Banner = () => {
     return (
-        <div>
-            <div>
+        <div className="grid md:grid-cols-2 md:px-14 px-5 ">
+            <div className="md:mt-20 md:ml-10 ">
                 <h1 className="text-5xl  font-bold  ">
-                    One Step Closer To Your <span>Dream Job</span>
+                    One Step <br /> Closer To Your <br /> <span className="text-[#7E90FE]">Dream Job</span>
                 </h1>
-                <p>
+                <p className="py-7">
                     Explore thousands of job opportunities with all
                     the information you need. Its your future. Come find it.
                     Manage all your job application from start to finish.
                 </p>
-                <button className="btn">Get Started</button>
+                <button className="hidden md:block btn">Get Started</button>
             </div>
             <div>
-                <img src="../../../public/images/user.png" alt="" />
+                <img className="w-auto" src="user.png" alt="" />
+               <div className=" flex justify-center">
+               <button className="md:hidden block btn   my-5">Get Started</button>
+               </div>
             </div>
         </div>
     );

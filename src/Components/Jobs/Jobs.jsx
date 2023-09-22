@@ -3,8 +3,8 @@
 const Jobs = () => {
     
     return (
-        <div>
-            <h1>jobs</h1>
+        <div className="h-screen">
+            <h1 className="text-5xl"> ami jobs</h1>
         </div>
     );
 };
