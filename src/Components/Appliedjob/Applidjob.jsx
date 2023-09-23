@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoreJobApplication } from "../Utility/Localstorage";
-import { list } from "postcss";
-import Job from "../Job/Job";
+import { FaChevronDown } from 'react-icons/fa';
+// import { list } from "postcss";
+// import Job from "../Job/Job";
+import Appliedjobcart from "./Appliedjobcart";
 
 const Applidjob = () => {
     const [appliedJob, setAppliedJob] = useState([])
@@ -43,20 +45,24 @@ const Applidjob = () => {
     // console.log(appliedJob)
     return (
         <div>
-            <h1 className="text-2xl">Applied job :{appliedJob?.length} </h1>
-            <details className="dropdown mb-32">
-                <summary className="m-1 btn">open or close</summary>
+           
+         <div className="text-right">
+         <details className="dropdown mb-32 text-black">
+                <summary className="m-1 btn">Filter By <FaChevronDown /></summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                     <li onClick={() => handleJobFilter('all')}><a>All</a></li>
                     <li onClick={() => handleJobFilter('remote')}><a>Remote</a></li>
                     <li onClick={() => handleJobFilter('onside')}><a>Onside</a></li>
                 </ul>
             </details>
-            <ul>
+         </div>
+            
+                <div className="md:px-20 px-5">
                 {
-                    displayJobs.map(data => <li key={data.id}>{data.company_name}</li>)
+                    displayJobs.map(data => <Appliedjobcart key={data.id} data={data}></Appliedjobcart>)
                 }
-            </ul>
+                </div>
+          
         </div>
     );
 };

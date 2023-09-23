@@ -21,7 +21,7 @@ const Featured = () => {
                 Its your future
             </p>
            </div>
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-20">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-20 mx-10">
             {
                 jobs.slice(0,dataLength).map(job=> <Job key={job.id} job={job}></Job>)
             }
