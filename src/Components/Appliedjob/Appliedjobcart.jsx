@@ -29,7 +29,7 @@ const Appliedjobcart = ({ data }) => {
                     </div>
                 </div>
                 <div className="flex-1 text-center hidden md:block ">
-                    <button className="btn ">View Details</button>
+                    <button className="btn  ">View Details</button>
                 </div>
             </div>
         </div>

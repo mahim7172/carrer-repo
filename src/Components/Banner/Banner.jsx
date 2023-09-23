@@ -5,7 +5,7 @@ const Banner = () => {
         <div className="grid md:grid-cols-2 md:px-14 px-5 ">
             <div className="md:mt-20 md:ml-10 ">
                 <h1 className="text-5xl  font-bold  ">
-                    One Step <br /> Closer To Your <br /> <span className="text-[#7E90FE]">Dream Job</span>
+                    One Step <br /> Closer To Your <br /> <span className="text-[#3a7bd5]">Dream Job</span>
                 </h1>
                 <p className="py-7">
                     Explore thousands of job opportunities with all
@@ -17,7 +17,7 @@ const Banner = () => {
             <div>
                 <img className="w-auto" src="user.png" alt="" />
                <div className=" flex justify-center">
-               <button className="md:hidden block btn   my-5">Get Started</button>
+               <button className="md:hidden block btn  my-5">Get Started</button>
                </div>
             </div>
         </div>
